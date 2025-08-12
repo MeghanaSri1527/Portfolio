@@ -34,5 +34,5 @@ It showcases your skills, projects, education, and contact information with smoo
 <img width="1920" height="1080" alt="Screenshot (474)" src="https://github.com/user-attachments/assets/082be934-5a00-47f5-93e9-c3323ff64766" />
 
 ## 🌐 Live Demo
-[View Live]
+[View Live] https://portfolio-seven-taupe-61.vercel.app/
 
