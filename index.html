@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Meghana - Front-End Developer & Software Developer</title>
+    <meta name="description" content="Passionate front-end developer and software developer building user-centric experiences. Explore my portfolio of modern web applications and innovative projects.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3><span class="logo-k">K</span> <span class="logo-meghana">Meghana</span></h3>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- <button id="theme-toggle" class="toggle-btn">🌙</button> -->
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="wave">👋</span>
+                        <h1>Hello, I'm <span class="highlight">K Meghana</span></h1>
+                    </div>
+                    <div class="hero-role">
+                        <h2>I'm a <span class="typewriter" id="typewriter"></span></h2>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about building user-centric experiences through innovative technology solutions. 
+                        I create beautiful, functional web applications that solve real-world problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="Meghana_K_Resume.pdf" download class="btn btn-primary" >Download Resume</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/MeghanaSri1527" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/meghana-kantamani-304903259/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:meghanakantamani0708@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-element" data-speed="3">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="floating-element" data-speed="1.5">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="floating-element" data-speed="2.5">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="floating-element" data-speed="1.8">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="floating-element" data-speed="2.2">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <svg viewBox="0 0 400 400" class="avatar-svg">
+                                    <!-- Modern Avatar Illustration -->
+                                    <defs>
+                                        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        </linearGradient>
+                                        <linearGradient id="hair-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#2D1B69;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#1E1A78;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Background -->
+                                    <circle cx="200" cy="200" r="190" fill="url(#bg-gradient)"/>
+                                    
+                                    <!-- Face -->
+                                    <ellipse cx="200" cy="220" rx="80" ry="90" fill="#FDBCB4"/>
+                                    
+                                    <!-- Hair -->
+                                    <path d="M120 160 Q200 100 280 160 Q280 120 200 110 Q120 120 120 160" fill="url(#hair-gradient)"/>
+                                    
+                                    <!-- Eyes -->
+                                    <ellipse cx="175" cy="200" rx="8" ry="12" fill="#FFF"/>
+                                    <ellipse cx="225" cy="200" rx="8" ry="12" fill="#FFF"/>
+                                    <ellipse cx="175" cy="202" rx="4" ry="6" fill="#333"/>
+                                    <ellipse cx="225" cy="202" rx="4" ry="6" fill="#333"/>
+                                    
+                                    <!-- Nose -->
+                                    <ellipse cx="200" cy="220" rx="3" ry="5" fill="#F5A7A7"/>
+                                    
+                                    <!-- Mouth -->
+                                    <path d="M185 240 Q200 250 215 240" stroke="#E91E63" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- Laptop -->
+                                    <rect x="150" y="280" width="100" height="60" rx="5" fill="#2F2F2F"/>
+                                    <rect x="155" y="285" width="90" height="50" rx="2" fill="#000"/>
+                                    
+                                    <!-- Code on laptop -->
+                                    <rect x="160" y="290" width="30" height="2" fill="#61DAFB"/>
+                                    <rect x="160" y="295" width="40" height="2" fill="#98D982"/>
+                                    <rect x="160" y="300" width="25" height="2" fill="#FFD700"/>
+                                    <rect x="160" y="305" width="35" height="2" fill="#FF6B6B"/>
+                                    <rect x="160" y="310" width="45" height="2" fill="#4ECDC4"/>
+                                    
+                                    <!-- Sparkles -->
+                                    <g class="sparkle" opacity="0.8">
+                                        <path d="M120 100 L125 110 L120 120 L115 110 Z" fill="#FFD700"/>
+                                        <path d="M310 120 L315 130 L310 140 L305 130 Z" fill="#FFD700"/>
+                                        <path d="M90 250 L95 260 L90 270 L85 260 Z" fill="#FFD700"/>
+                                        <path d="M320 280 L325 290 L320 300 L315 290 Z" fill="#FFD700"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="code-decoration">
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="bg-animation"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about enhanced-about-section">
+        <div class="about-flex-container">
+            <div class="about-image-side">
+                <div class="about-img-animated">
+                        <svg viewBox="0 0 300 300" class="about-svg">
+                        <!-- Coding workspace illustration (same as before, can be replaced with a profile photo if desired) -->
+                            <defs>
+                                <linearGradient id="desk-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Desk -->
+                            <rect x="20" y="200" width="260" height="20" rx="10" fill="url(#desk-gradient)"/>
+                            <!-- Monitor -->
+                            <rect x="100" y="120" width="100" height="80" rx="5" fill="#2F2F2F"/>
+                            <rect x="105" y="125" width="90" height="70" rx="3" fill="#000"/>
+                            <!-- Code lines -->
+                            <rect x="110" y="130" width="40" height="3" fill="#61DAFB"/>
+                            <rect x="110" y="140" width="50" height="3" fill="#98D982"/>
+                            <rect x="110" y="150" width="30" height="3" fill="#FFD700"/>
+                            <rect x="110" y="160" width="60" height="3" fill="#FF6B6B"/>
+                            <rect x="110" y="170" width="45" height="3" fill="#4ECDC4"/>
+                            <rect x="110" y="180" width="70" height="3" fill="#45B7D1"/>
+                            <!-- Monitor stand -->
+                            <rect x="145" y="200" width="10" height="20" fill="#2F2F2F"/>
+                            <rect x="130" y="215" width="40" height="5" rx="2" fill="#2F2F2F"/>
+                            <!-- Keyboard -->
+                            <rect x="120" y="225" width="60" height="20" rx="3" fill="#E8E8E8"/>
+                            <rect x="125" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="132" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="139" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="146" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="153" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="160" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <rect x="167" y="230" width="5" height="3" rx="1" fill="#FFF"/>
+                            <!-- Mouse -->
+                            <ellipse cx="200" cy="240" rx="8" ry="12" fill="#E8E8E8"/>
+                            <!-- Coffee cup -->
+                            <ellipse cx="60" cy="185" rx="12" ry="10" fill="#8B4513"/>
+                            <ellipse cx="60" cy="182" rx="10" ry="8" fill="#D2691E"/>
+                            <rect x="72" y="180" width="8" height="5" rx="2" fill="#8B4513"/>
+                            <!-- Steam -->
+                            <path d="M57 175 Q57 165 62 170 Q62 160 67 165" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.6"/>
+                            <!-- Plant -->
+                            <ellipse cx="230" cy="190" rx="6" ry="4" fill="#8B4513"/>
+                            <path d="M230 190 Q225 180 220 170" stroke="#98D982" stroke-width="2" fill="none"/>
+                            <path d="M230 190 Q235 180 240 170" stroke="#98D982" stroke-width="2" fill="none"/>
+                            <ellipse cx="220" cy="170" rx="2" ry="5" fill="#98D982"/>
+                            <ellipse cx="240" cy="170" rx="2" ry="5" fill="#98D982"/>
+                            <!-- Books -->
+                            <rect x="240" y="170" width="15" height="30" fill="#FF6B6B"/>
+                            <rect x="255" y="175" width="15" height="25" fill="#4ECDC4"/>
+                            <!-- Floating code elements -->
+                            <text x="40" y="80" fill="#61DAFB" font-size="10" font-family="monospace" opacity="0.8">&lt;/&gt;</text>
+                            <text x="220" y="90" fill="#98D982" font-size="8" font-family="monospace" opacity="0.7">{ }</text>
+                            <text x="60" y="120" fill="#FFD700" font-size="7" font-family="monospace" opacity="0.6">const</text>
+                            <text x="200" y="130" fill="#FF6B6B" font-size="7" font-family="monospace" opacity="0.6">function</text>
+                        </svg>
+                    <div class="about-floating-shape shape1"></div>
+                    <div class="about-floating-shape shape2"></div>
+                </div>
+            </div>
+            <div class="about-text-side">
+                <div class="section-header about-header-animated">
+                    <span class="section-subtitle">Get to know me</span>
+                    <h2 class="section-title">About Me <i class="fas fa-smile"></i></h2>
+                </div>
+                <div class="about-text about-text-animated">
+                    <p>I'm a dedicated <b>Full Stack Developer</b> with a strong command of both front-end and back-end technologies.<br>
+                    My journey in software development started with a fascination for building dynamic and user-friendly web applications from end to end.
+                    </p>
+                    <p>I specialize in <b>React</b>, <b>JavaScript</b>, and modern CSS frameworks on the front end, along with <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b> on the back end.<br>
+                    I'm passionate about creating scalable, maintainable solutions and constantly exploring new tools, frameworks, and best practices to deliver high-quality software.
+                    </p>
+                    <div class="about-highlight-cards">
+                        <div class="about-highlight-card">✨ Creative Problem Solver</div>
+                        <div class="about-highlight-card">🚀 Fast Learner</div>
+                        <div class="about-highlight-card">🤝 Team Player</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills robo-bar-skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I can do</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="robo-skills-flex">
+                <div class="robo-mascot-col robo-mascot-up">
+                    <div class="robo-mascot-anim cute-robo-float">
+                        <!-- Cute Robot Mascot SVG: left hand relaxed (from side), right hand points to skills (from shoulder) -->
+                        <svg class="robo-svg" viewBox="0 0 120 170" width="120" height="170">
+                            <ellipse cx="60" cy="158" rx="28" ry="8" fill="#a5b4fc" opacity="0.25"/>
+                            <defs>
+                                <linearGradient id="roboBodyGradientHuman" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#f5e9da"/>
+                                    <stop offset="100%" stop-color="#a5b4fc"/>
+                                </linearGradient>
+                                <linearGradient id="roboHeadGradientHuman" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#f5e9da"/>
+                                    <stop offset="100%" stop-color="#a5b4fc"/>
+                                </linearGradient>
+                                <linearGradient id="roboBandGradient" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#38bdf8"/>
+                                    <stop offset="100%" stop-color="#7c3aed"/>
+                                </linearGradient>
+                            </defs>
+                            <g transform="rotate(-8 60 54)">
+                                <ellipse cx="60" cy="54" rx="34" ry="38" fill="url(#roboHeadGradientHuman)"/>
+                                <ellipse cx="60" cy="44" rx="28" ry="10" fill="url(#roboBandGradient)" opacity="0.7"/>
+                                <ellipse cx="26" cy="60" rx="6" ry="10" fill="#7cf9e4" stroke="#38bdf8" stroke-width="2"/>
+                                <ellipse cx="94" cy="60" rx="6" ry="10" fill="#7cf9e4" stroke="#38bdf8" stroke-width="2"/>
+                                <ellipse cx="60" cy="60" rx="24" ry="20" fill="#fff"/>
+                                <g>
+                                    <ellipse cx="52" cy="62" rx="7" ry="7.5" fill="#181c2a" stroke="#fff" stroke-width="2.2"/>
+                                    <ellipse cx="68" cy="62" rx="7" ry="7.5" fill="#181c2a" stroke="#fff" stroke-width="2.2"/>
+                                    <ellipse cx="54" cy="60" rx="2.2" ry="2.2" fill="#fff" opacity="0.95"/>
+                                    <ellipse cx="70" cy="60" rx="2.2" ry="2.2" fill="#fff" opacity="0.95"/>
+                                    <rect x="48" y="55" width="7" height="1.5" rx="0.7" fill="#38bdf8"/>
+                                    <rect x="65" y="55" width="7" height="1.5" rx="0.7" fill="#38bdf8"/>
+                                </g>
+                                <ellipse cx="52" cy="72" rx="3.5" ry="1.5" fill="#fbb6ce"/>
+                                <ellipse cx="68" cy="72" rx="3.5" ry="1.5" fill="#fbb6ce"/>
+                                <ellipse cx="60" cy="66" rx="1.2" ry="0.8" fill="#fbb6ce"/>
+                                <path d="M54 74 Q60 82 66 74 Q60 88 54 74" fill="#fff" stroke="#38bdf8" stroke-width="2"/>
+                                <ellipse cx="60" cy="84" rx="2.2" ry="0.8" fill="#38bdf8"/>
+                            </g>
+                            <rect x="57" y="8" width="6" height="16" rx="3" fill="#38bdf8"/>
+                            <circle cx="60" cy="6" r="5" fill="#7cf9e4"/>
+                            <ellipse cx="60" cy="120" rx="22" ry="28" fill="url(#roboBodyGradientHuman)"/>
+                            <!-- Left arm (relaxed, from side) -->
+                            <g>
+                                <path d="M38 120 Q30 130 45 140" stroke="#38bdf8" stroke-width="10" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="45" cy="140" rx="7" ry="7" fill="#7cf9e4"/>
+                            </g>
+                            <!-- Right arm (pointing to skills, from shoulder) -->
+                            <g class="robo-arm-point">
+                                <path d="M82 120 Q100 110 108 90 Q112 80 110 80" stroke="#38bdf8" stroke-width="10" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="110" cy="80" rx="7" ry="7" fill="#7cf9e4"/>
+                                <!-- Finger -->
+                                <ellipse cx="117" cy="77" rx="3" ry="6" fill="#38bdf8"/>
+                            </g>
+                            <ellipse cx="50" cy="146" rx="7" ry="4" fill="#38bdf8"/>
+                            <ellipse cx="70" cy="146" rx="7" ry="4" fill="#38bdf8"/>
+                        </svg>
+                        <div class="robo-mascot-caption">Let me show you my skills <span class="robo-emoji">🤖</span></div>
+                    </div>
+                </div>
+                <div class="robo-bar-skills-cols">
+                    <div class="robo-bar-skills-grid">
+                        <div class="bar-skills-col">
+                            <div class="bar-skills-heading">Programming</div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Java</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="85"></div></div><span class="bar-skill-percent">90%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Python</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="90"></div></div><span class="bar-skill-percent">80%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">JavaScript</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="92"></div></div><span class="bar-skill-percent">74%</span></div>
+                        </div>
+                        <div class="bar-skills-col">
+                            <div class="bar-skills-heading">Frontend</div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">HTML5</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="98"></div></div><span class="bar-skill-percent">98%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">CSS3</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="95"></div></div><span class="bar-skill-percent">95%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Bootstrap5</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="95"></div></div><span class="bar-skill-percent">95%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Tailwind CSS</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="95"></div></div><span class="bar-skill-percent">80%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">React</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="93"></div></div><span class="bar-skill-percent">84%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">TypeScript</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="85"></div></div><span class="bar-skill-percent">70%</span></div>
+                        </div>
+                        <div class="bar-skills-col">
+                            <div class="bar-skills-heading">Backend</div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Node.js</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="82"></div></div><span class="bar-skill-percent">94%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Express</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="78"></div></div><span class="bar-skill-percent">82%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Spring BOot</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="78"></div></div><span class="bar-skill-percent">87%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">PHP</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="78"></div></div><span class="bar-skill-percent">79%</span></div>
+                        </div>
+                        <div class="bar-skills-col">
+                            <div class="bar-skills-heading">Database & Tools</div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">MongoDB</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="75"></div></div><span class="bar-skill-percent">88%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">MySQL</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="75"></div></div><span class="bar-skill-percent">93%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Postman</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="75"></div></div><span class="bar-skill-percent">76%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">Git</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="90"></div></div><span class="bar-skill-percent">90%</span></div>
+                            <div class="bar-skill-row"><span class="bar-skill-label">GitHub</span><div class="bar-skill-bar"><div class="bar-skill-fill" data-percent="92"></div></div><span class="bar-skill-percent">92%</span></div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- Experience, Education, and Certifications Section (modern two-column layout) -->
+    <section id="experience" class="exp-edu-cert-section">
+      <div class="exp-edu-cert-flex">
+        <!-- Left: Experience Timeline -->
+        <div class="exp-timeline-col">
+          <h2 class="exp-edu-title">Professional Experience</h2>
+          <div class="exp-timeline">
+            <!-- Example Experience Card -->
+            <div class="exp-timeline-item">
+              <div class="exp-timeline-dot"></div>
+              <div class="exp-timeline-card">
+                <h3 class="exp-role">Full Stack Developer</h3>
+                <a class="exp-company" href="#" target="_blank">Datavalley.ai</a>
+                <div class="exp-meta">
+                  <span><i class="fas fa-calendar"></i> 06/2024-07/2024</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Visakhapatnam</span>
+                </div>
+                <ul class="exp-desc">
+                    <li>Developed a student management system with intuitive user interaction and structured data handling</li>
+                    <li>Implemented full CRUD operations by integrating backend services with a relational database</li>
+                    <li>Ensured seamless client-server communication and accurate data processing through API validation</li>
+                    <li>Tested the system for functionality, data consistency, and reliable user experience</li>
+                </ul>
+                <div class="exp-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>MySQL</span><span>Postman</span>
+                            </div>
+                            </div>
+                        </div>
+            <!-- Add more exp-timeline-item blocks for each experience -->
+                            </div>
+                        </div>
+        <!-- Right: Education and Certifications -->
+        <div class="edu-cert-right-col">
+          <h2 class="exp-edu-title">Education</h2>
+          <div class="edu-card">
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <a class="edu-school" href="#" target="_blank">GMR Institute of Technology</a>
+            <div class="edu-meta">
+              <span><i class="fas fa-calendar"></i> 2022 - 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Razam</span>
+                            </div>
+            <div class="edu-desc">Specialized in Software Engineering and Web Development</div>
+                            </div>
+          <div class="edu-card">
+            <h3>Higher Secondary Education</h3>
+            <a class="edu-school" href="#" target="_blank">Tirumala Mahila Junior Kalasala</a>
+            <div class="edu-meta">
+              <span><i class="fas fa-calendar"></i> 2020 - 2022</span>
+              <span><i class="fas fa-map-marker-alt"></i> Katheru,Rajahmundry</span>
+                        </div>
+            <div class="edu-desc">Science Stream: Mathematics, Physics, Chemistry</div>
+                            </div>
+          <h2 class="exp-edu-title cert-title-main">Certifications</h2>
+            <div class="edu-card">
+            <h3>AWS Academy Cloud Foundations</h3>
+            <a class="edu-school" href="#" target="_blank">AWS Academy</a>
+            <div class="edu-meta">
+              <span><i class="fas fa-calendar"></i> October 2024</span>
+              <span><i class="fas fa-external-link-alt"></i>
+                <a href="https://example.com/cloud-foundations-certificate" target="_blank" style="color: #0073e6; text-decoration: none;">
+                View Certificate</a>
+              </span>
+            </div>
+            <div class="edu-desc">Explored the core of cloud computing with real-time AWS tools and services.<br>
+                                Mastered the fundamentals of cloud architecture, scalability, and deployment strategies.</div>
+            </div>
+            </div>
+
+
+          <!-- Add more cert-card blocks for each certification -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://real-estate-using-mern.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MeghanaSri1527/Real-Estate-using-MERN" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Estate Management System</h3>
+                        <p>Developed a Real Estate Management System using the MERN stack with features like user login, property listings, search filters, and inquiry forms. Included an admin panel for streamlined management of users and properties.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Router DOM</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://todolist-24.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MeghanaSri1527/ToDo_List" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ToDo List Application</h3>
+                        <p>Developed a responsive To-Do List application with features to add, edit, delete, and mark tasks as completed. Focused on clean UI design, efficient task handling, and strengthening CRUD-based programming logic.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://climate-hub-beta.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MeghanaSri1527/Climate_Hub" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A modern and responsive web project that showcases climate-related information with a clean, visually appealing design. Built for speed and accessibility, it ensures a smooth browsing experience across devices.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="#" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Let's work together</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Gmail</h4>
+                                <p>meghanakantamani0708@gmail.com</p>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Phone</h4>
+                                <p>+91 8555958987</p>
+                                <span>Available Mon-Fri, 9AM-6PM IST</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Location</h4>
+                                <p>Razam, India</p>
+                                <span>Open to remote opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/meghana-kantamani-304903259/" class="social-link-large"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MeghanaSri1527" class="social-link-large"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link-large"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-large"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form action="https://formsubmit.co/meghanakantamani0708@gmail.com" method="POST" class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <button class="back-to-top" id="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>K Meghana</h3>
+                    <p>Front-End Developer & Software Developer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/meghana-kantamani-304903259/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MeghanaSri1527"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:meghanakantamani0708@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Designed & Built with <i class="fas fa-heart"></i> by K Meghana | © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- Lottie player script for animated robot -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
